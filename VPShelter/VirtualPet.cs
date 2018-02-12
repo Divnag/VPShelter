@@ -105,7 +105,7 @@ namespace VPShelter
             }
             else
             {
-                Console.WriteLine("Done Watering\n");
+               // Console.WriteLine("Done \n");
                 thirst -= thirst;
             }
 

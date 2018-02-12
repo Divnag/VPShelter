@@ -42,11 +42,12 @@ namespace VPShelter
         public override void ClockIN(double time)
         {
             
+            Console.WriteLine("Volunteer Checked in Time"+time);
         }
 
         public override void ShowID(string name, int id)
         {
-            
+            Console.WriteLine("Manager Name and Id: "+name+":"+id);
         }
 
         public void Feed(string petType,string petDiet)
@@ -56,13 +57,13 @@ namespace VPShelter
 
         public void Water(string petType)
         {
-            Console.WriteLine("Done giving water :"+petType);
+            Console.WriteLine("Done giving water to :"+petType);
         }
 
 
         public void Adopt(string pet)
         {
-            Console.WriteLine("you are adopting"+pet);
+            Console.WriteLine("you Adopted :"+pet);
         }
     }
 }

@@ -65,6 +65,24 @@ namespace VPShelter
         {
             base.Isclean();
         }
+        public void Asc()
+        { 
+        Console.WriteLine("         /| |\\");
+        Console.WriteLine("        ( |-| )");
+ Console.WriteLine("          )\"(");
+        Console.WriteLine("        (>(Y)<)");
+         Console.WriteLine("        )     (");
+        Console.WriteLine("        /     \\");
+         Console.WriteLine("       (( m|m) ) "); 
+Console.WriteLine("     ,-.),___.(,-.");
+Console.WriteLine("     `---'   `---'");
+
+
+
+          
+    }
+
+
 
 
     }

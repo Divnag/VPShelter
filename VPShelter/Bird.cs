@@ -68,7 +68,23 @@ namespace VPShelter
 
 
 
+        public void ASC()
+        {
+            //var verbatimString = ". -  __ / 6 |  ~ `  o \' )= '' ";
 
+            Console.WriteLine("        __,---.");
+            Console.WriteLine("       /_|o\\   )");
+            Console.WriteLine("       `- \\/  /");
+            Console.WriteLine("          ,) (,");
+            Console.WriteLine("         //   \\\\");
+            Console.WriteLine("       {(       )}");
+            Console.WriteLine("   ===== /\\ === /\\===============");
+            Console.WriteLine("           |||||");
+            Console.WriteLine("            |||");
+            Console.WriteLine("             |");
+
+
+        }
 
 
 

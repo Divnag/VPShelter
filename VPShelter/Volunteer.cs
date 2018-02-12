@@ -21,13 +21,15 @@ namespace VPShelter
             get { return this.name; }
             set { this.name = value; }
         }
-
+        public double Time { get; set; }
+        public int Id { get; set; }
 
         //consturctors
 
         public Volunteer()
         {
-
+            this.Name = name;
+            this.EmployeeID = Id;
         }
 
         public Volunteer(string name,int id)
@@ -35,29 +37,39 @@ namespace VPShelter
             this.name = name;
             this.EmployeeID = id;
         }
+        public Volunteer(double time)
+        {
+            this.Time = time;
+            
+        }
 
 
         //methods
 
         public override void ClockIN(double time)
         {
+            this.Time = time;
             Console.WriteLine("your checkin time:"+time);
         }
 
         public override void ShowID(string name ,int id)
         {
-            if (name == "mary")
+            if (name == "MARY")
             {
                 Console.WriteLine("Volunteer Id:" + id);
             }
-            if(name=="david")
+            if(name=="DAVID")
             {
                 Console.WriteLine("Volunteer Id:" + id);
             }
             else
             {
-                Random r = new Random();
+                Console.WriteLine("First time volunteering");
+                Random temp = new Random();
+                id= temp.Next(100, 200);
 
+                Console.WriteLine("Volunteer Id:"+id);
+                EmployeeID = id;
                 
             }
         }
@@ -70,7 +82,7 @@ namespace VPShelter
 
         public void Water(string petType)
         {
-            Console.WriteLine("Done giving Water :" + petType);
+            Console.WriteLine("Done giving Water to:" + petType);
         }
     }
 }
